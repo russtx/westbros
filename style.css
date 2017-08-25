@@ -1,0 +1,119 @@
+/*!
+Theme Name: Starter Theme
+Author: Russ Berge
+Author URI: http://russberge.com
+Description: bootstrap 3 starter themes setup with sass and gulp
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/***********
+standard bootstrap sizes
+************/
+/***********
+variables
+here you can set the bootstrap variables that you want
+full variables file is located in
+../src/bootstrap-sass-version/assets/stylesheets/bootstrap/_variables
+************/
+/***********
+import bootstrap
+************/
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+/*Wordpress basic styles (those inserted by the editor)*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.entry-content img {
+  margin: 0 0 1.5em 0;
+}
+
+.alignleft, img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+
+.alignright, img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+
+.aligncenter, img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+
+.alignnone, img.alignnone {
+  /* not sure about this one */
+}
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+.wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0;
+}
+
+.wp-smiley {
+  margin: 0 !important;
+  max-height: 1em;
+}
+
+blockquote.left {
+  margin-right: 20px;
+  text-align: right;
+  margin-left: 0;
+  width: 33%;
+  float: left;
+}
+
+blockquote.right {
+  margin-left: 20px;
+  text-align: left;
+  margin-right: 0;
+  width: 33%;
+  float: right;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+body {
+  background: url("./images/background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*======================= Header ============================================ */
+/*================================= Main CSS =============================================*/
+/*================Footer =============*/
+/* responsive settings */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Sass Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) =====================================================================================================*/
+/* Large devices (large desktops, 1200px and up)============================================================================================ */
+/* Large devices (large desktops, 1600px and up)============================================================================================ */
+/***********
+theme styles
+here you can directley add styles or import additional sass files
+feel free to use @extend to apply bootstrap classes and bootstrap variables
+************/

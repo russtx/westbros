@@ -1,0 +1,54 @@
+/*!
+Theme Name: Starter Theme
+Author: Russ Berge
+Author URI: http://russberge.com
+Description: bootstrap 3 starter themes setup with sass and gulp
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/***********
+standard bootstrap sizes
+************/
+$xs: 0;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+
+/***********
+variables
+here you can set the bootstrap variables that you want
+full variables file is located in
+../src/bootstrap-sass-version/assets/stylesheets/bootstrap/_variables
+************/
+
+// $font-size-base: 15px;
+// $grid-float-breakpoint: $md;
+
+
+/***********
+import bootstrap
+************/
+@import "modules/_fonts.scss"; //add your @font-face definitions here
+
+@import "modules/mixins.scss";
+@import "modules/variables.scss";
+@import "partials/_wpstyles.scss";
+@import "partials/wrapper.scss";
+@import "partials/header.scss";
+@import "partials/main.scss";
+@import "partials/footer.scss";
+@import "partials/responsive.scss";
+
+
+
+/***********
+theme styles
+here you can directley add styles or import additional sass files
+feel free to use @extend to apply bootstrap classes and bootstrap variables
+************/
+footer {
+  //@extend .well;
+}

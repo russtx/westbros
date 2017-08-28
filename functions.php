@@ -349,6 +349,8 @@ function jquery_cdn(){
 	//Main Style
   //wp_enqueue_style( 'main-style', $template_url . 'style.css' );
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'animate.min.css', $template_url . 'style.css' );
+	wp_enqueue_style( 'animate.css', $template_url . '/css/animate.css');
   //wp_enqueue_style( 'lightbox', $template_url . '/css/lightbox.min.css' );
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {

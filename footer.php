@@ -1,5 +1,14 @@
-<footer>
-  <?php bloginfo( 'name' ); ?>
+</div><!--container-->
+<footer class="animated zoomIn">
+
+  <p>
+    &copy; <?php echo date('Y'); ?><?php bloginfo('name'); ?><br />
+    ALL RIGHTS RESERVERED.
+  </p>
+  <p>
+    -WEBSITE CREATED BY:<br />
+    <a href="#" target="_blank">TOP LINE MEDIA TEAM</a>
+  </p>
   <div class="social">
   <?php
   // social links, using the svgs inside the icons folder

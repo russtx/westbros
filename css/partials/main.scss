@@ -1,1 +1,72 @@
 /*================================= Main CSS =============================================*/
+.container{
+  overflow: hidden;
+}
+#topSection {
+  h1{
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    //-vendor-animation-iteration-count: infinite;
+  }
+  .contactInfo{
+    text-align: center;
+    margin-top:24px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    a.phone{
+      color: #fff;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Alfa Slab One', cursive;
+
+    }
+  }
+  .map{
+    text-align: center;
+    margin-top:24px;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    a.location{
+      color: #fff;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Alfa Slab One', cursive;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .homeContent{
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    margin-top:20px;
+    font-size: 16px;
+    text-align: center;
+    animation-duration: 3s;
+    animation-delay: 4s;
+  }
+}
+#centerSection{
+  text-align:center;
+  a.btn-main{
+    display: inline-block;
+    border: solid 1px #fff;
+    border-radius:5px;
+    color:#fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    margin-top: 20px;
+    @extend .flip
+  }
+}

@@ -1,1 +1,17 @@
 /*================Footer =============*/
+footer{
+  background: rgba(0, 0, 0, .5);
+  animation-duration: 3s;
+  animation-delay: 8s;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  p{
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  a{
+    color:#fff;
+  }
+}

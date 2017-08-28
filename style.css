@@ -20,8 +20,13 @@ full variables file is located in
 import bootstrap
 ************/
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
-/*Wordpress basic styles (those inserted by the editor)*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.flip, #centerSection a.btn-main {
+  animation-duration: 3s;
+  animation-delay: 6s;
+}
+
+/*Wordpress basic styles (those inserted by the editor)*/
 .entry-content img {
   margin: 0 0 1.5em 0;
 }
@@ -95,16 +100,124 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 body {
-  background: url("./images/background-2.jpg");
+  background: url("./images/background-88.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: 0px;
+  background-position-x: -343px;
   height: 100vh;
 }
 
 /*======================= Header ============================================ */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#menu-menu-1 {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
 /*================================= Main CSS =============================================*/
+.container {
+  overflow: hidden;
+}
+
+#topSection h1 {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+#topSection .contactInfo {
+  text-align: center;
+  margin-top: 24px;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+#topSection .contactInfo a.phone {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+#topSection .map {
+  text-align: center;
+  margin-top: 24px;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+#topSection .map a.location {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Alfa Slab One', cursive;
+  display: block;
+  margin-top: 10px;
+}
+
+#topSection .homeContent {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+#centerSection {
+  text-align: center;
+}
+
+#centerSection a.btn-main {
+  display: inline-block;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
 /*================Footer =============*/
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  animation-duration: 3s;
+  animation-delay: 8s;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
 /* responsive settings */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Sass Bootstrap */

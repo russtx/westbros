@@ -105,7 +105,8 @@ body {
   background-size: cover;
   background-position-y: 0px;
   background-position-x: -343px;
-  height: 100vh;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 /*======================= Header ============================================ */
@@ -152,6 +153,15 @@ body {
   font-family: 'Alfa Slab One', cursive;
 }
 
+#topSection .contactInfo a.phone:hover {
+  color: #7c71ed;
+}
+
+#topSection .contactInfo a.phone .glyphicon {
+  color: #7c71ed;
+  text-shadow: -1px 0 #473f9e, 0 1px #473f9e, 1px 0 #473f9e, 0 -1px #473f9e;
+}
+
 #topSection .map {
   text-align: center;
   margin-top: 24px;
@@ -168,6 +178,14 @@ body {
   font-family: 'Alfa Slab One', cursive;
   display: block;
   margin-top: 10px;
+}
+
+#topSection .map a.location:hover {
+  color: #f23232;
+}
+
+#topSection .map .glyphicon {
+  color: #f23232;
 }
 
 #topSection .homeContent {
@@ -188,6 +206,7 @@ body {
 
 #centerSection a.btn-main {
   display: inline-block;
+  text-decoration: none;
   border: solid 1px #fff;
   border-radius: 5px;
   color: #fff;
@@ -198,12 +217,23 @@ body {
   margin-top: 20px;
 }
 
+#centerSection a.btn-main:hover {
+  background: #fff;
+  border: solid 1px #473f9e;
+  color: #473f9e;
+  text-shadow: none;
+}
+
+.input-lg {
+  width: 100%;
+}
+
 /*================Footer =============*/
 footer {
   background: rgba(0, 0, 0, 0.5);
   animation-duration: 3s;
-  animation-delay: 8s;
-  position: absolute;
+  margin: 34px 0 0 0;
+  padding-bottom: 0px;
   bottom: 0;
   width: 100%;
 }
@@ -218,11 +248,32 @@ footer a {
   color: #fff;
 }
 
+footer a:hover {
+  text-decoration: none;
+  color: #7c71ed;
+}
+
+.footer {
+  position: absolute;
+}
+
 /* responsive settings */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Sass Bootstrap */
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background-position-x: -68px;
+  }
+}
+
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
+@media (min-width: 992px) {
+  body {
+    background-position-x: 0px;
+  }
+}
+
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 /***********

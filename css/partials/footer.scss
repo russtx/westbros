@@ -2,10 +2,13 @@
 footer{
   background: rgba(0, 0, 0, .5);
   animation-duration: 3s;
-  animation-delay: 8s;
-  position: absolute;
+  //animation-delay: 8s;
+  //position: absolute;
+  margin: 34px 0 0 0;
+  padding-bottom: 0px;;
   bottom: 0;
   width:100%;
+
   p{
     color:#fff;
     text-transform: uppercase;
@@ -13,5 +16,12 @@ footer{
   }
   a{
     color:#fff;
+    &:hover{
+      text-decoration: none;
+      color:$markerBlue;
+    }
   }
+}
+.footer{
+  position: absolute;
 }

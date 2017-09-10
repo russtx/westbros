@@ -24,9 +24,17 @@
       text-align: center;
       text-decoration: none;
       font-family: 'Alfa Slab One', cursive;
-
+      &:hover{
+        color:$markerBlue;
+      }
+      .glyphicon{
+        color: $markerBlue;
+        text-shadow: -1px 0 rgb(71, 63, 158), 0 1px rgb(71, 63, 158), 1px 0 rgb(71, 63, 158), 0 -1px rgb(71, 63, 158);
+      }
     }
+
   }
+
   .map{
     text-align: center;
     margin-top:24px;
@@ -41,7 +49,14 @@
       font-family: 'Alfa Slab One', cursive;
       display: block;
       margin-top: 10px;
+      &:hover{
+        color:rgb(242, 50, 50);
+      }
     }
+    .glyphicon{
+      color: $markerRed;
+    }
+
   }
   .homeContent{
     color: #fff;
@@ -59,6 +74,7 @@
   text-align:center;
   a.btn-main{
     display: inline-block;
+    text-decoration: none;
     border: solid 1px #fff;
     border-radius:5px;
     color:#fff;
@@ -67,6 +83,16 @@
     font-weight: 900;
     padding: 5px 10px;
     margin-top: 20px;
+    &:hover{
+      background: #fff;
+      border:solid 1px $borderBlue;
+      color:$borderBlue;
+      text-shadow: none;
+    }
     @extend .flip
+
   }
+}
+.input-lg{
+  width:100%;
 }

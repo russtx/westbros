@@ -8,4 +8,7 @@
 }
 .navbar-default .navbar-nav>li>a{
   color: #fff;
+  &:hover{
+    color: red;
+  }
 }

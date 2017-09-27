@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 }
 body{
-  background:url('./images/background-88.jpg');
+  background:url('./images/background-88-2.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position-y: 0px;
@@ -15,7 +15,14 @@ body{
   background-attachment: fixed;
   //height: 100vh;
   width:100%;
-
+  color:#fff;
+  a{
+    color: #fff;
+    font-weight: 900;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 
 
 }

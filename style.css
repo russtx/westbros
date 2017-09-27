@@ -1,5 +1,5 @@
 /*!
-Theme Name: Starter Theme
+Theme Name: West Brothers Supply
 Author: Russ Berge
 Author URI: http://russberge.com
 Description: bootstrap 3 starter themes setup with sass and gulp
@@ -100,13 +100,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 body {
-  background: url("./images/background-88.jpg");
+  background: url("./images/background-88-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 0px;
   background-position-x: -343px;
   background-attachment: fixed;
   width: 100%;
+  color: #fff;
+}
+
+body a {
+  color: #fff;
+  font-weight: 900;
+}
+
+body a:hover {
+  text-decoration: none;
 }
 
 /*======================= Header ============================================ */
@@ -121,6 +131,10 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
 }
 
 /*================================= Main CSS =============================================*/

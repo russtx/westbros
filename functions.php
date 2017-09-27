@@ -399,3 +399,8 @@ function my_acf_init() {
 	acf_update_setting('google_api_key', 'AIzaSyCFTzESYhJl9b73O7vP32FP7J1c5Uf3jL4');
 }
 add_action('acf/init', 'my_acf_init');
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
